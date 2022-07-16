@@ -12,13 +12,13 @@ app.use(express.json())
 
 /* set up swagger in the root */
 const swaggerDocument = YAML.load('api.yaml')
-// app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+app.use('/apidoc', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 /* bring in some routers */
 app.use('/person', personRouter)
 
 /* bring in some routers */
-app.get('/echo', (req, res) => {
+app.use('/echo', (req, res) => {
     console.log(`API echo req ${req}`);
     res.send({
       message: `API echo calling`, 
