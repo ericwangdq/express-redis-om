@@ -4,7 +4,8 @@
   "description": "Started code for Redis OM + Express workshop.",
   "type": "module",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "start:play": "nodemon play.js"
   },
   "author": "Guy Royse <guy@guyroyse.com> (http://guyroyse.com/)",
   "license": "MIT",
@@ -15,6 +16,7 @@
   "dependencies": {
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "redblade": "^0.0.3",
     "redis": "^4.0.4",
     "redis-om": "^0.2.0",
     "swagger-ui-express": "^4.3.0",

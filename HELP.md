@@ -36,3 +36,13 @@ const anArray = await client.execute(['HGETALL', 'foo'])
 
 await client.close()
 </code>
+
+## Redblade ORM
+
+http://redblade.ourjs.com/
+
+<pre>yarn add redblade</pre>
+
+https://github.com/newghost/redblade
+
+https://github.com/newghost/ourjs
