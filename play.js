@@ -32,7 +32,6 @@ client.on("error", (err) => {
 const app = new express();
 app.use(express.json());
 
-const playRouter = Router();
 app.use("/echo", (req, res) => {
   console.log(`API echo req ${req}`);
   res.send({
@@ -40,6 +39,8 @@ app.use("/echo", (req, res) => {
     timestamp: `${new Date()}`,
   });
 });
+
+const playRouter = Router();
 app.use("/redis", playRouter);
 
 playRouter.post("/object/:key", async (req, res) => {

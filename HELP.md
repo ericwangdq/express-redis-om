@@ -4,7 +4,9 @@ https://app.redislabs.com/#/profile
 
 https://redis.io/docs/stack/get-started/tutorials/stack-node/
 
-## Redis OM for Node.js:
+## Redis and Redis OM for Node.js:
+
+https://github.com/redis/node-redis https://www.npmjs.com/package/redis
 
 https://github.com/redis-developer/express-redis-om-workshop
 
